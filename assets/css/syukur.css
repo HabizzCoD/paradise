@@ -1,0 +1,187 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+
+/* Colors */
+:root {
+  --color-default: #0a0d13;
+  --color-primary: #558196;
+  --color-secondary: #fff;
+  --color-thrith: #2f2f30;
+  --color-fourth: #717172;
+  --color-success: #559673;
+  --color-success-hover: #83978c;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-dark {
+  transition: 500ms ease;
+  background: transparent;
+}
+.navbar-dark.scrolled {
+  background: var(--color-thrith);
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-dark {
+    background: var(--color-thrith);
+  }
+}
+
+/* navbar */
+nav {
+  background: var(--color-thrith);
+}
+
+#offcanvasNavbar {
+  background: var(--color-thrith);
+  color: white;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+nav ul {
+  margin-inline-start: auto;
+}
+
+@media screen and (max-width: 991px) {
+  nav #offcanvasScrolling ul {
+    margin-inline-end: auto;
+  }
+}
+
+.lines {
+  width: 20%;
+  height: 3px;
+  background-color: var(--color-thrith);
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--color-success) !important;
+}
+
+.text-success {
+  color: var(--color-success) !important;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--color-primary);
+  --bs-btn-border-color: var(--color-primary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--color-primary);
+  --bs-btn-hover-border-color: var(--color-primary);
+}
+
+/* home */
+#home .row {
+  padding-top: 12rem;
+}
+
+#home h1 {
+  font-size: 60px;
+}
+
+#home .line {
+  width: 10%;
+  height: 3px;
+  background-color: #fff;
+}
+
+/* about */
+/* #about {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#about .rounded-lg {
+  border-radius: 1rem !important;
+}
+
+#about .text-small {
+  font-size: 0.9rem !important;
+}
+
+#about .custom-separator {
+  width: 5rem;
+  height: 6px;
+  border-radius: 1rem;
+}
+
+#about .text-uppercase {
+  letter-spacing: 0.2em;
+} */
+
+/* testimonial */
+#testimonial {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+#testimonial p {
+  text-align: justify;
+}
+
+/* footer */
+#footer {
+  background: var(--color-thrith);
+}
+
+#footer .btn-outline-light {
+  --bs-btn-color: #6c757d;
+  --bs-btn-border-color: #6c757d;
+}
+
+#footer .btn-outline-primary {
+  --bs-btn-color: #6c757d;
+  --bs-btn-border-color: #6c757d;
+  --bs-btn-hover-bg: var(--color-primary);
+  --bs-btn-hover-border-color: var(--color-primary);
+  --bs-btn-active-color: #fff !important;
+  box-shadow: none;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+#footer .text-mutan {
+  --bs-text-opacity: 1;
+  color: #6c757d !important;
+}
+
+#footer .text-mutan:hover {
+  color: #fff !important;
+}
+
+#footer .furu {
+  border-top: 1px solid #6c757d;
+}
+/* responsive */
+@media screen and (max-width: 600px) {
+  #home h1 {
+    font-size: 36px;
+  }
+
+  .rong {
+    padding-left: 10px;
+  }
+}
